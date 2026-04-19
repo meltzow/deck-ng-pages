@@ -5,7 +5,7 @@ const STORAGE_KEYS = {
 };
 
 const POSTHOG = {
-  apiKey: "phc_za6nWkOZPQYfJGPGQff8tucXXvk2WbxlQMhHz9RENKK",
+  projectToken: "phc_za6nWkOZPQYfJGPGQff8tucXXvk2WbxlQMhHz9RENKK",
   host: "https://eu.i.posthog.com/capture/",
 };
 
@@ -56,7 +56,7 @@ const content = {
     },
     metrics: {
       eyebrow: "Grounded in the product",
-      title: "The website copy follows the current deck NG source and openspec, not a stock landing page template.",
+      title: "The website copy follows current deck NG product behavior and specifications, not a stock landing page template.",
       items: [
         {
           value: "Nextcloud 28+",
@@ -80,7 +80,7 @@ const content = {
       eyebrow: "What the app actually does",
       title: "Built around the real deck NG feature set.",
       text:
-        "The feature overview below is based on the repo, openspec, and current UI flows: login, dashboard discovery, board interaction, card editing, app settings, and privacy-related behavior.",
+        "The feature overview below reflects the current app experience across login, dashboard discovery, board interaction, card editing, app settings, and privacy-related behavior.",
       items: [
         {
           icon: "↗",
@@ -116,7 +116,7 @@ const content = {
           icon: "⚑",
           title: "Feedback and analytics controls",
           text:
-            "The app source includes PostHog-based analytics/feedback logic, privacy policy access, open-source license listing, and an opt-out path for custom tracking.",
+            "The app includes privacy policy access, legal information, analytics and feedback controls, and an opt-out path for custom tracking.",
         },
       ],
     },
@@ -124,7 +124,7 @@ const content = {
       eyebrow: "Screens",
       title: "From login to card details.",
       text:
-        "These screenshots come from the current deck NG app repository and show the core user flow that this website describes.",
+        "These screenshots show the current deck NG user flow from login to settings.",
       items: [
         {
           image: SCREENSHOTS.login,
@@ -149,7 +149,7 @@ const content = {
         {
           image: SCREENSHOTS.settings,
           title: "Settings",
-          text: "Control language, theme mode, privacy information, and OSS licenses.",
+          text: "Control language, theme mode, privacy information, and tracking preferences.",
         },
       ],
     },
@@ -157,7 +157,7 @@ const content = {
       eyebrow: "Privacy and legal basics",
       title: "Static GitHub Pages site, explicit consent for website analytics, transparent app disclosures.",
       text:
-        "This website is hosted via GitHub Pages. It uses local browser storage for language and consent preferences, and only sends website analytics to PostHog after opt-in. The privacy page also documents the app-side data flows visible in the current deck NG source code.",
+        "This website is hosted via GitHub Pages. It uses local browser storage for language and consent preferences, and only sends website analytics to PostHog after opt-in. The privacy page also documents app-side data flows and privacy-relevant behavior.",
       items: [
         "No website tracking before consent.",
         "Website preferences are limited to language choice and analytics consent state.",
@@ -168,9 +168,9 @@ const content = {
     },
     downloads: {
       eyebrow: "Download and support",
-      title: "Use the app, inspect the source, or file issues.",
+      title: "Use the app or get support.",
       text:
-        "The store links remain the primary call to action. GitHub stays available as the support and source reference for a self-hosted audience.",
+        "The store links remain the primary call to action. Support and project information are available through the website and contact channel below.",
       items: [
         {
           title: "App Store",
@@ -185,10 +185,10 @@ const content = {
           action: "Open Google Play",
         },
         {
-          title: "GitHub",
-          text: "Inspect the repository, open issues, or follow project progress in public.",
-          href: "https://github.com/meltzow/deck-ng",
-          action: "Open repository",
+          title: "Support",
+          text: "Send questions or feedback about deck NG directly by email.",
+          href: "mailto:deck-ng@meltzow.net",
+          action: "Contact support",
         },
       ],
     },
@@ -196,7 +196,7 @@ const content = {
       "deck NG is a Nextcloud Deck client focused on self-hosted project work from your phone.",
     footerPrivacy: "Privacy Policy",
     footerImpressum: "Legal Notice",
-    footerSupport: "Support on GitHub",
+    footerSupport: "Contact support",
     footerConsent: "Privacy settings",
     consent: {
       title: "Website analytics are off until you opt in.",
@@ -217,7 +217,7 @@ const content = {
       privacyEyebrow: "Privacy Policy",
       privacyTitle: "Privacy information for the website and the app",
       privacyIntro:
-        "This page covers the public deck NG website hosted on GitHub Pages and the deck NG mobile app as described by the current source code and app metadata. Last updated: 19 April 2026.",
+        "This page covers the public deck NG website hosted on GitHub Pages and the deck NG mobile app as described by current app behavior and public app metadata. Last updated: 19 April 2026.",
       privacyHtml: `
         <h2>1. Controller</h2>
         <p>Mario Meltzow<br />Keilbergweg 1<br />53894 Mechernich<br />Germany</p>
@@ -226,7 +226,7 @@ const content = {
         <h2>2. Scope of this notice</h2>
         <p>This privacy notice covers two separate contexts:</p>
         <ul>
-          <li>the public website at <code>meltzow.github.io/deck-ng</code>, and</li>
+          <li>the public website at <code>meltzow.github.io/deck-ng-pages</code>, and</li>
           <li>the mobile app “deck NG” for iPhone and Android.</li>
         </ul>
 
@@ -254,7 +254,7 @@ const content = {
         <p>The legal basis is Art. 6(1)(b) GDPR if your request relates to a contractual or pre-contractual matter, otherwise Art. 6(1)(f) GDPR.</p>
 
         <h2>7. App-related processing in deck NG</h2>
-        <p>According to the current deck NG source code and public app metadata, the app processes data that is necessary to connect to your chosen Nextcloud server and to display and edit your Deck content.</p>
+        <p>According to the current app behavior and public app metadata, the app processes data that is necessary to connect to your chosen Nextcloud server and to display and edit your Deck content.</p>
         <p>This can include in particular:</p>
         <ul>
           <li>the server URL you enter or scan,</li>
@@ -269,7 +269,7 @@ const content = {
         <p>The current app specifications describe support for Nextcloud Login Flow v2. In that flow, authentication is started against your Nextcloud server, continued in the system browser, and completed by returning app credentials to the app. This reduces the need for the app to handle your main account password directly where the server supports the flow.</p>
 
         <h2>9. App analytics, surveys, and feedback</h2>
-        <p>The current app source code contains PostHog-based analytics, event tracking, screen tracking, exception capture, and feedback or survey related functionality. The source code also contains an opt-out path for custom tracking.</p>
+        <p>The current app includes PostHog-based analytics, event tracking, screen tracking, exception capture, and feedback or survey related functionality, together with an opt-out path for custom tracking.</p>
         <p>Because app behavior can change over time, the exact scope of app-side analytics should always be assessed against the shipped app version. Where consent is required for analytics or feedback collection, the legal basis is Art. 6(1)(a) GDPR. Where processing is necessary for product security, stability, or service operation, the legal basis may also include Art. 6(1)(f) GDPR.</p>
 
         <h2>10. Recipients and third-country processing</h2>
@@ -304,9 +304,8 @@ const content = {
 
         <h2>Project references</h2>
         <ul>
-          <li>Website: <a href="https://meltzow.github.io/deck-ng/">https://meltzow.github.io/deck-ng/</a></li>
-          <li>Source code: <a href="https://github.com/meltzow/deck-ng">https://github.com/meltzow/deck-ng</a></li>
-          <li>Support / issues: <a href="https://github.com/meltzow/deck-ng/issues">https://github.com/meltzow/deck-ng/issues</a></li>
+          <li>Website: <a href="https://meltzow.github.io/deck-ng-pages/">https://meltzow.github.io/deck-ng-pages/</a></li>
+          <li>Support: <a href="mailto:deck-ng@meltzow.net">deck-ng@meltzow.net</a></li>
         </ul>
 
         <h2>VAT and business register</h2>
@@ -356,7 +355,7 @@ const content = {
     },
     metrics: {
       eyebrow: "Am Produkt ausgerichtet",
-      title: "Die Website-Texte basieren auf aktuellem deck-NG-Quellcode und openspec, nicht auf einer generischen Landingpage-Vorlage.",
+      title: "Die Website-Texte basieren auf aktuellem Produktverhalten und Spezifikationen, nicht auf einer generischen Landingpage-Vorlage.",
       items: [
         {
           value: "Nextcloud 28+",
@@ -380,7 +379,7 @@ const content = {
       eyebrow: "Was die App tatsächlich kann",
       title: "Auf die reale deck-NG-Funktionsfläche gebaut.",
       text:
-        "Die folgende Übersicht stützt sich auf Repository, openspec und die aktuellen UI-Abläufe: Login, Dashboard, Board-Interaktion, Kartenbearbeitung, App-Einstellungen und datenschutzrelevantes Verhalten.",
+        "Die folgende Übersicht stützt sich auf die aktuellen UI-Abläufe und Produktfunktionen: Login, Dashboard, Board-Interaktion, Kartenbearbeitung, App-Einstellungen und datenschutzrelevantes Verhalten.",
       items: [
         {
           icon: "↗",
@@ -416,7 +415,7 @@ const content = {
           icon: "⚑",
           title: "Feedback und Analysekontrolle",
           text:
-            "Der aktuelle Quellcode enthält PostHog-basierte Analytics- und Feedback-Logik, Zugriff auf Datenschutzerklärung und OSS-Lizenzen sowie einen Opt-out-Pfad für benutzerdefiniertes Tracking.",
+            "Die App enthält Zugriff auf Datenschutzerklärung, rechtliche Informationen sowie Analytics-, Feedback- und Opt-out-Steuerung.",
         },
       ],
     },
@@ -424,7 +423,7 @@ const content = {
       eyebrow: "Screens",
       title: "Vom Login bis zur Kartendetailansicht.",
       text:
-        "Diese Screenshots stammen aus dem aktuellen deck-NG-Repository und zeigen den Kernablauf, den diese Website beschreibt.",
+        "Diese Screenshots zeigen den aktuellen deck-NG-Kernablauf, den diese Website beschreibt.",
       items: [
         {
           image: SCREENSHOTS.login,
@@ -449,7 +448,7 @@ const content = {
         {
           image: SCREENSHOTS.settings,
           title: "Einstellungen",
-          text: "Sprache, Theme-Modus, Datenschutzinfos und OSS-Lizenzen steuern.",
+          text: "Sprache, Theme-Modus, Datenschutzinfos und Tracking-Präferenzen steuern.",
         },
       ],
     },
@@ -457,7 +456,7 @@ const content = {
       eyebrow: "Datenschutz und Rechtliches",
       title: "Statische GitHub-Pages-Seite, ausdrückliche Einwilligung für Webanalyse, transparente App-Hinweise.",
       text:
-        "Diese Website wird über GitHub Pages gehostet. Sie nutzt lokalen Browser-Speicher für Sprache und Einwilligungseinstellungen und sendet Website-Analytics erst nach Opt-in an PostHog. Die Datenschutzseite dokumentiert außerdem die appseitigen Datenflüsse, die im aktuellen deck-NG-Quellcode sichtbar sind.",
+        "Diese Website wird über GitHub Pages gehostet. Sie nutzt lokalen Browser-Speicher für Sprache und Einwilligungseinstellungen und sendet Website-Analytics erst nach Opt-in an PostHog. Die Datenschutzseite dokumentiert außerdem appseitige Datenflüsse und datenschutzrelevantes Verhalten.",
       items: [
         "Kein Website-Tracking vor Einwilligung.",
         "Website-Präferenzen beschränken sich auf Sprache und Analytics-Zustimmung.",
@@ -468,9 +467,9 @@ const content = {
     },
     downloads: {
       eyebrow: "Download und Support",
-      title: "App nutzen, Quellcode prüfen oder Issues melden.",
+      title: "App nutzen oder Support erhalten.",
       text:
-        "Die Store-Links bleiben die primären CTAs. GitHub bleibt die sekundäre Quelle für Support, Transparenz und Quellcode.",
+        "Die Store-Links bleiben die primären CTAs. Support und Projektinformationen laufen über diese Website und die Kontaktadresse unten.",
       items: [
         {
           title: "App Store",
@@ -485,10 +484,10 @@ const content = {
           action: "Google Play öffnen",
         },
         {
-          title: "GitHub",
-          text: "Repository einsehen, Issues öffnen oder den Projektstand öffentlich verfolgen.",
-          href: "https://github.com/meltzow/deck-ng",
-          action: "Repository öffnen",
+          title: "Support",
+          text: "Fragen oder Feedback zu deck NG direkt per E-Mail senden.",
+          href: "mailto:deck-ng@meltzow.net",
+          action: "Support kontaktieren",
         },
       ],
     },
@@ -496,7 +495,7 @@ const content = {
       "deck NG ist ein Nextcloud-Deck-Client mit Fokus auf selbstgehostete Projektarbeit vom Smartphone aus.",
     footerPrivacy: "Datenschutzerklärung",
     footerImpressum: "Impressum",
-    footerSupport: "Support auf GitHub",
+    footerSupport: "Support kontaktieren",
     footerConsent: "Datenschutzeinstellungen",
     consent: {
       title: "Website-Analyse ist aus, bis du ausdrücklich zustimmst.",
@@ -517,7 +516,7 @@ const content = {
       privacyEyebrow: "Datenschutzerklärung",
       privacyTitle: "Datenschutzhinweise für Website und App",
       privacyIntro:
-        "Diese Seite deckt die öffentliche deck-NG-Website auf GitHub Pages sowie die deck-NG-Mobile-App auf Grundlage des aktuellen Quellcodes und der App-Metadaten ab. Stand: 19. April 2026.",
+        "Diese Seite deckt die öffentliche deck-NG-Website auf GitHub Pages sowie die deck-NG-Mobile-App auf Grundlage des aktuellen App-Verhaltens und der App-Metadaten ab. Stand: 19. April 2026.",
       privacyHtml: `
         <h2>1. Verantwortlicher</h2>
         <p>Mario Meltzow<br />Keilbergweg 1<br />53894 Mechernich<br />Deutschland</p>
@@ -526,7 +525,7 @@ const content = {
         <h2>2. Geltungsbereich dieser Hinweise</h2>
         <p>Diese Datenschutzhinweise betreffen zwei getrennte Kontexte:</p>
         <ul>
-          <li>die öffentliche Website unter <code>meltzow.github.io/deck-ng</code> und</li>
+          <li>die öffentliche Website unter <code>meltzow.github.io/deck-ng-pages</code> und</li>
           <li>die mobile App „deck NG“ für iPhone und Android.</li>
         </ul>
 
@@ -554,7 +553,7 @@ const content = {
         <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, soweit deine Anfrage mit einem Vertrag oder vorvertraglichen Maßnahmen zusammenhängt, andernfalls Art. 6 Abs. 1 lit. f DSGVO.</p>
 
         <h2>7. App-bezogene Verarbeitung in deck NG</h2>
-        <p>Nach dem aktuellen deck-NG-Quellcode und den öffentlichen App-Metadaten verarbeitet die App Daten, die erforderlich sind, um sich mit deinem gewählten Nextcloud-Server zu verbinden und deine Deck-Inhalte anzuzeigen und zu bearbeiten.</p>
+        <p>Nach dem aktuellen App-Verhalten und den öffentlichen App-Metadaten verarbeitet die App Daten, die erforderlich sind, um sich mit deinem gewählten Nextcloud-Server zu verbinden und deine Deck-Inhalte anzuzeigen und zu bearbeiten.</p>
         <p>Dazu können insbesondere gehören:</p>
         <ul>
           <li>die Server-URL, die du eingibst oder scannst,</li>
@@ -569,7 +568,7 @@ const content = {
         <p>Die aktuellen App-Spezifikationen beschreiben die Unterstützung von Nextcloud Login Flow v2. Dabei wird die Authentifizierung an deinem Nextcloud-Server gestartet, im Systembrowser fortgesetzt und durch die Rückgabe von App-Zugangsdaten an die App abgeschlossen. Dadurch muss die App dein Hauptkonto-Passwort, soweit der Server den Flow unterstützt, nicht direkt verarbeiten.</p>
 
         <h2>9. App-Analytics, Umfragen und Feedback</h2>
-        <p>Der aktuelle App-Quellcode enthält PostHog-basierte Analytics, Event-Tracking, Screen-Tracking, Exception-Capture sowie Feedback- und Survey-Funktionen. Der Quellcode enthält außerdem einen Opt-out-Pfad für benutzerdefiniertes Tracking.</p>
+        <p>Die aktuelle App enthält PostHog-basierte Analytics, Event-Tracking, Screen-Tracking, Exception-Capture sowie Feedback- und Survey-Funktionen. Außerdem ist ein Opt-out-Pfad für benutzerdefiniertes Tracking vorgesehen.</p>
         <p>Da sich App-Verhalten im Zeitverlauf ändern kann, sollte der genaue Umfang appseitiger Analytics immer gegen die tatsächlich ausgelieferte App-Version geprüft werden. Soweit für Analytics oder Feedback eine Einwilligung erforderlich ist, ist Rechtsgrundlage Art. 6 Abs. 1 lit. a DSGVO. Soweit Verarbeitung für Produktsicherheit, Stabilität oder Betrieb erforderlich ist, kann zusätzlich Art. 6 Abs. 1 lit. f DSGVO einschlägig sein.</p>
 
         <h2>10. Empfänger und Drittlandverarbeitung</h2>
@@ -604,9 +603,8 @@ const content = {
 
         <h2>Projektverweise</h2>
         <ul>
-          <li>Website: <a href="https://meltzow.github.io/deck-ng/">https://meltzow.github.io/deck-ng/</a></li>
-          <li>Quellcode: <a href="https://github.com/meltzow/deck-ng">https://github.com/meltzow/deck-ng</a></li>
-          <li>Support / Issues: <a href="https://github.com/meltzow/deck-ng/issues">https://github.com/meltzow/deck-ng/issues</a></li>
+          <li>Website: <a href="https://meltzow.github.io/deck-ng-pages/">https://meltzow.github.io/deck-ng-pages/</a></li>
+          <li>Support: <a href="mailto:deck-ng@meltzow.net">deck-ng@meltzow.net</a></li>
         </ul>
 
         <h2>Umsatzsteuer und Registerangaben</h2>
@@ -948,7 +946,7 @@ function captureEvent(eventName, properties = {}) {
   if (analyticsConsent !== "granted") return;
 
   const payload = {
-    api_key: POSTHOG.apiKey,
+    api_key: POSTHOG.projectToken,
     event: eventName,
     properties: {
       distinct_id: getDistinctId(),
