@@ -663,9 +663,31 @@ h2 {
   background: transparent;
 }
 
+.consent-dialog:not([open]) {
+  display: none;
+}
+
+.consent-dialog.is-open,
+.consent-dialog[open] {
+  display: block;
+  position: fixed;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  z-index: 40;
+}
+
 .consent-dialog::backdrop {
   background: rgba(16, 33, 51, 0.4);
   backdrop-filter: blur(6px);
+}
+
+.consent-dialog.is-open::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 33, 51, 0.4);
+  backdrop-filter: blur(6px);
+  z-index: -1;
 }
 
 .dialog-card {

@@ -658,6 +658,8 @@ function bindCommonUI() {
   const privacyConsent = document.getElementById("privacy-consent");
   const dialog = document.getElementById("consent-dialog");
   const dialogSave = document.getElementById("dialog-save");
+  const dialogCancel = document.getElementById("dialog-cancel");
+  const dialogClose = document.getElementById("dialog-close");
   const analyticsToggle = document.getElementById("analytics-toggle");
 
   if (consentAccept) {
@@ -682,7 +684,7 @@ function bindCommonUI() {
     if (!button || !dialog) return;
     button.addEventListener("click", () => {
       renderConsentDialogState();
-      dialog.showModal();
+      openConsentDialog(dialog);
     });
   });
 
@@ -695,6 +697,23 @@ function bindCommonUI() {
       captureEvent("website_analytics_consent_updated", { consent: analyticsConsent });
       if (analyticsConsent === "granted") {
         trackPageView(true);
+      }
+      closeConsentDialog(dialog);
+    });
+  }
+
+  [dialogCancel, dialogClose].forEach((button) => {
+    if (!button || !dialog) return;
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      closeConsentDialog(dialog);
+    });
+  });
+
+  if (dialog) {
+    dialog.addEventListener("click", (event) => {
+      if (event.target === dialog) {
+        closeConsentDialog(dialog);
       }
     });
   }
@@ -962,6 +981,24 @@ function setText(id, value) {
 function setHTML(id, value) {
   const element = document.getElementById(id);
   if (element) element.innerHTML = value;
+}
+
+function openConsentDialog(dialog) {
+  if (typeof dialog.showModal === "function") {
+    dialog.showModal();
+  } else {
+    dialog.setAttribute("open", "open");
+    dialog.classList.add("is-open");
+  }
+}
+
+function closeConsentDialog(dialog) {
+  if (typeof dialog.close === "function") {
+    dialog.close();
+  } else {
+    dialog.removeAttribute("open");
+    dialog.classList.remove("is-open");
+  }
 }
 
 function readStorage(key) {
