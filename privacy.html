@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>deck NG Privacy Policy</title>
+    <meta
+      name="description"
+      content="Privacy information for the deck NG website and app, including GitHub Pages hosting and consent-based PostHog website analytics."
+    />
+    <meta property="og:title" content="deck NG Privacy Policy" />
+    <meta
+      property="og:description"
+      content="Privacy information for the deck NG website and app."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://meltzow.github.io/deck-ng/privacy.html" />
+    <link rel="canonical" href="https://meltzow.github.io/deck-ng/privacy.html" />
+    <link rel="icon" href="./assets/site/icon.png" type="image/png" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body data-page="privacy">
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="brand-lockup">
+          <a class="brand" href="./index.html" aria-label="deck NG home">
+            <img src="./assets/site/logo.png" alt="deck NG logo" class="brand-logo" />
+            <span class="brand-text">deck NG</span>
+          </a>
+          <p class="brand-tagline" id="header-tagline"></p>
+        </div>
+
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a class="nav-link" data-nav="overview" href="./index.html#overview"></a>
+          <a class="nav-link" data-nav="features" href="./index.html#features"></a>
+          <a class="nav-link" data-nav="screens" href="./index.html#screens"></a>
+          <a class="nav-link" data-nav="privacy" href="./privacy.html"></a>
+          <a class="nav-link" data-nav="impressum" href="./impressum.html"></a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="lang-switcher" aria-label="Language selector">
+            <button class="lang-btn" data-lang="de" type="button">DE</button>
+            <button class="lang-btn" data-lang="en" type="button">EN</button>
+          </div>
+          <a
+            class="button button-primary button-small"
+            id="header-download"
+            href="https://apps.apple.com/us/app/deck-ng/id6443334702"
+            target="_blank"
+            rel="noreferrer"
+          ></a>
+        </div>
+      </header>
+
+      <main class="legal-main">
+        <section class="legal-hero">
+          <p class="eyebrow" id="legal-eyebrow"></p>
+          <h1 id="legal-title"></h1>
+          <p class="section-text" id="legal-intro"></p>
+        </section>
+        <section class="legal-card prose" id="legal-content"></section>
+      </main>
+
+      <footer class="site-footer">
+        <div>
+          <a class="brand brand-footer" href="./index.html">
+            <img src="./assets/site/logo.png" alt="deck NG logo" class="brand-logo" />
+            <span class="brand-text">deck NG</span>
+          </a>
+          <p class="footer-text" id="footer-text"></p>
+        </div>
+        <div class="footer-links">
+          <a href="./privacy.html" id="footer-privacy"></a>
+          <a href="./impressum.html" id="footer-impressum"></a>
+          <a href="https://github.com/meltzow/deck-ng/issues" target="_blank" rel="noreferrer" id="footer-support"></a>
+          <button class="button-reset footer-button" id="footer-consent" type="button"></button>
+        </div>
+      </footer>
+    </div>
+
+    <div class="consent-banner" id="consent-banner" hidden>
+      <div>
+        <p class="consent-title" id="consent-title"></p>
+        <p class="consent-text" id="consent-text"></p>
+      </div>
+      <div class="consent-actions">
+        <button class="button button-ghost" id="consent-decline" type="button"></button>
+        <button class="button button-primary" id="consent-accept" type="button"></button>
+      </div>
+    </div>
+
+    <dialog class="consent-dialog" id="consent-dialog">
+      <form method="dialog" class="dialog-card">
+        <div class="dialog-header">
+          <h2 id="dialog-title"></h2>
+          <button class="button-reset dialog-close" id="dialog-close" type="submit" aria-label="Close">×</button>
+        </div>
+        <p class="dialog-text" id="dialog-text"></p>
+        <div class="dialog-option">
+          <div>
+            <strong id="dialog-analytics-title"></strong>
+            <p id="dialog-analytics-text"></p>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="analytics-toggle" />
+            <span class="switch-ui"></span>
+          </label>
+        </div>
+        <div class="dialog-actions">
+          <button class="button button-secondary" id="dialog-cancel" type="submit"></button>
+          <button class="button button-primary" id="dialog-save" type="button"></button>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>

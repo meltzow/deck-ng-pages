@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://meltzow.github.io/deck-ng/sitemap.xml
