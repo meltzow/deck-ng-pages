@@ -642,6 +642,10 @@ h2 {
   box-shadow: 0 22px 48px rgba(17, 38, 59, 0.28);
 }
 
+.consent-banner[hidden] {
+  display: none;
+}
+
 .consent-title {
   margin: 0 0 8px;
   font-family: "Space Grotesk", sans-serif;

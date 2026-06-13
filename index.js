@@ -69,10 +69,6 @@ const content = {
           value: "iPhone + Android",
           label: "Primary download targets via the public App Store and Google Play listings.",
         },
-        {
-          value: "PostHog opt-in",
-          label: "Website analytics only starts after your explicit consent.",
-        },
       ],
     },
     features: {
@@ -366,10 +362,6 @@ const content = {
         {
           value: "iPhone + Android",
           label: "Primäre Download-Ziele über die öffentlichen App-Store- und Google-Play-Einträge.",
-        },
-        {
-          value: "PostHog per Opt-in",
-          label: "Website-Analyse startet erst nach ausdrücklicher Einwilligung.",
         },
       ],
     },
@@ -697,7 +689,6 @@ function bindCommonUI() {
   if (dialogSave && analyticsToggle && dialog) {
     dialogSave.addEventListener("click", () => {
       setConsent(analyticsToggle.checked ? "granted" : "denied");
-      dialog.close();
       const banner = document.getElementById("consent-banner");
       if (banner) banner.hidden = true;
       captureEvent("website_analytics_consent_updated", { consent: analyticsConsent });
