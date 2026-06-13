@@ -36,7 +36,6 @@ const content = {
       privacy: "Privacy",
       impressum: "Legal Notice",
     },
-    downloadShort: "Download",
     hero: {
       eyebrow: "Nextcloud Deck on the go",
       title: "Manage boards and cards without giving up your own server.",
@@ -45,7 +44,7 @@ const content = {
       appStore: "Download on the App Store",
       playStore: "Get it on Google Play",
       points: [
-        "Works with Nextcloud Server 28+ and the Deck app enabled.",
+        "Works with Nextcloud Server 32+ and the Deck app enabled.",
         "Bilingual app experience in German and English.",
         "Designed around self-hosting, clear permissions, and direct control over your workflow data.",
       ],
@@ -59,8 +58,8 @@ const content = {
       title: "The website copy follows current deck NG product behavior and specifications, not a stock landing page template.",
       items: [
         {
-          value: "Nextcloud 28+",
-          label: "Current compatibility statement from the app store metadata.",
+          value: "Nextcloud 32+",
+          label: "Current compatibility statement from the app specification.",
         },
         {
           value: "DE + EN",
@@ -84,39 +83,39 @@ const content = {
       items: [
         {
           icon: "↗",
-          title: "Connect to your own Nextcloud",
+          title: "Connect with Login Flow v2",
           text:
-            "Enter your server URL or scan a QR code. deck NG validates the server and supports Nextcloud Login Flow v2 with browser handoff and resume handling.",
+            "Enter a server URL, validate your Nextcloud instance, continue authentication in the browser, resume the login countdown, or scan a QR code to add an account.",
         },
         {
           icon: "⌘",
-          title: "Find boards quickly",
+          title: "Find the right board",
           text:
-            "Browse your boards, search by name, filter archived entries, and sort dashboard results without leaving the main board overview.",
+            "Browse boards from your active account, refresh the dashboard, search by name, filter archived boards, sort results, and handle empty states cleanly.",
         },
         {
           icon: "≡",
-          title: "Work in Kanban",
+          title: "Move work through Kanban",
           text:
-            "Open a board as stacked columns, move cards within or across stacks using drag and drop, refresh board data, and add new cards directly from a column.",
+            "Open stacks and cards in a board view, add cards from a column, refresh board data, and move cards within or across stacks with immediate mutation feedback.",
         },
         {
           icon: "✎",
-          title: "Edit card details",
+          title: "Work inside card details",
           text:
-            "Update titles, descriptions, due dates, labels, and assignees. Markdown descriptions can be edited and previewed in the card detail screen.",
+            "Edit Markdown descriptions, labels, due dates, and assignees, then manage attachments, upload or delete files, post comments, and review activity.",
         },
         {
           icon: "◐",
-          title: "Match your setup",
+          title: "Manage accounts and setup",
           text:
-            "The app includes light, dark, and system theme modes, and exposes German and English language selection in settings.",
+            "Use profile data, account switching, add-account flows, anonymous access, language selection, and light, dark, or system theme modes from settings.",
         },
         {
           icon: "⚑",
-          title: "Feedback and analytics controls",
+          title: "Feedback, privacy, and reviews",
           text:
-            "The app includes privacy policy access, legal information, analytics and feedback controls, and an opt-out path for custom tracking.",
+            "Access privacy and license information, send feedback from the drawer or settings, answer native NPS prompts, and opt out of custom tracking.",
         },
       ],
     },
@@ -129,27 +128,27 @@ const content = {
         {
           image: SCREENSHOTS.login,
           title: "Login",
-          text: "Enter your server URL, start the browser flow, or scan a QR code.",
+          text: "Validate your server URL, continue Login Flow v2, or scan a QR code.",
         },
         {
           image: SCREENSHOTS.dashboard,
           title: "Dashboard",
-          text: "See boards, search them, filter them, and jump into active work.",
+          text: "Search, sort, filter, refresh, and open boards from the main overview.",
         },
         {
           image: SCREENSHOTS.kanban,
           title: "Kanban board",
-          text: "Stacks and cards stay in a board view optimized for movement and context.",
+          text: "Create cards, refresh the board, and move work across stacks with clear feedback.",
         },
         {
           image: SCREENSHOTS.card,
           title: "Card details",
-          text: "Edit descriptions, due dates, labels, and assignees in one place.",
+          text: "Edit card content and work with labels, due dates, assignees, attachments, comments, and activity.",
         },
         {
           image: SCREENSHOTS.settings,
           title: "Settings",
-          text: "Control language, theme mode, privacy information, and tracking preferences.",
+          text: "Manage accounts, profile data, theme, language, licenses, privacy, feedback, and review prompts.",
         },
       ],
     },
@@ -167,10 +166,10 @@ const content = {
       consent: "Manage analytics consent",
     },
     downloads: {
-      eyebrow: "Download and support",
-      title: "Use the app or get support.",
+      eyebrow: "Store links and support",
+      title: "Install deck NG from the stores.",
       text:
-        "The store links remain the primary call to action. Support and project information are available through the website and contact channel below.",
+        "Install deck NG from the public store listings. Support and project information are available through the website and contact channel below.",
       items: [
         {
           title: "App Store",
@@ -335,7 +334,6 @@ const content = {
       privacy: "Datenschutz",
       impressum: "Impressum",
     },
-    downloadShort: "Download",
     hero: {
       eyebrow: "Nextcloud Deck unterwegs",
       title: "Boards und Karten verwalten, ohne den eigenen Server aufzugeben.",
@@ -344,7 +342,7 @@ const content = {
       appStore: "Im App Store laden",
       playStore: "Bei Google Play laden",
       points: [
-        "Funktioniert mit Nextcloud Server 28+ und aktivierter Deck-App.",
+        "Funktioniert mit Nextcloud Server 32+ und aktivierter Deck-App.",
         "Zweisprachige App-Erfahrung auf Deutsch und Englisch.",
         "Ausgelegt auf Self-Hosting, klare Berechtigungen und direkte Kontrolle über deine Workflow-Daten.",
       ],
@@ -358,8 +356,8 @@ const content = {
       title: "Die Website-Texte basieren auf aktuellem Produktverhalten und Spezifikationen, nicht auf einer generischen Landingpage-Vorlage.",
       items: [
         {
-          value: "Nextcloud 28+",
-          label: "Aktueller Kompatibilitätshinweis aus den Store-Metadaten der App.",
+          value: "Nextcloud 32+",
+          label: "Aktueller Kompatibilitätshinweis aus der App-Spezifikation.",
         },
         {
           value: "DE + EN",
@@ -383,39 +381,39 @@ const content = {
       items: [
         {
           icon: "↗",
-          title: "Mit deiner eigenen Nextcloud verbinden",
+          title: "Mit Login Flow v2 verbinden",
           text:
-            "Server-URL eingeben oder QR-Code scannen. deck NG prüft den Server und unterstützt Nextcloud Login Flow v2 mit Browser-Weiterleitung und Wiederaufnahme.",
+            "Server-URL eingeben, Nextcloud-Instanz prüfen, Authentifizierung im Browser fortsetzen, den Login-Countdown wiederaufnehmen oder per QR-Code ein Konto hinzufügen.",
         },
         {
           icon: "⌘",
-          title: "Boards schnell finden",
+          title: "Das richtige Board finden",
           text:
-            "Boards durchsuchen, nach Namen suchen, archivierte Einträge filtern und Dashboard-Ergebnisse sortieren, ohne den Hauptüberblick zu verlassen.",
+            "Boards des aktiven Kontos durchsuchen, das Dashboard aktualisieren, nach Namen suchen, archivierte Boards filtern, Ergebnisse sortieren und leere Zustände sauber behandeln.",
         },
         {
           icon: "≡",
-          title: "In Kanban arbeiten",
+          title: "Arbeit durch Kanban bewegen",
           text:
-            "Ein Board als Spaltenansicht öffnen, Karten per Drag-and-Drop innerhalb oder zwischen Stacks verschieben, Daten aktualisieren und neue Karten direkt in einer Spalte anlegen.",
+            "Stacks und Karten in der Board-Ansicht öffnen, Karten aus einer Spalte anlegen, Board-Daten aktualisieren und Karten mit direktem Feedback innerhalb oder zwischen Stacks bewegen.",
         },
         {
           icon: "✎",
-          title: "Kartendetails bearbeiten",
+          title: "In Kartendetails arbeiten",
           text:
-            "Titel, Beschreibung, Fälligkeitsdatum, Labels und Zuständigkeiten pflegen. Markdown-Beschreibungen lassen sich bearbeiten und direkt in der Detailansicht prüfen.",
+            "Markdown-Beschreibungen, Labels, Fälligkeitsdaten und Zuständige bearbeiten, Anhänge verwalten, Dateien hochladen oder löschen, Kommentare schreiben und Aktivitäten prüfen.",
         },
         {
           icon: "◐",
-          title: "An dein Setup anpassen",
+          title: "Konten und Setup verwalten",
           text:
-            "Die App enthält hellen, dunklen und System-Theme-Modus und bietet Deutsch und Englisch in den Einstellungen an.",
+            "Profildaten, Kontowechsel, Konto-hinzufügen-Flows, anonymen Zugriff, Sprachauswahl sowie Hell-, Dunkel- oder Systemmodus in den Einstellungen nutzen.",
         },
         {
           icon: "⚑",
-          title: "Feedback und Analysekontrolle",
+          title: "Feedback, Datenschutz und Reviews",
           text:
-            "Die App enthält Zugriff auf Datenschutzerklärung, rechtliche Informationen sowie Analytics-, Feedback- und Opt-out-Steuerung.",
+            "Datenschutz- und Lizenzinformationen öffnen, Feedback aus Drawer oder Einstellungen senden, native NPS-Abfragen beantworten und eigenes Tracking deaktivieren.",
         },
       ],
     },
@@ -428,27 +426,27 @@ const content = {
         {
           image: SCREENSHOTS.login,
           title: "Login",
-          text: "Server-URL eingeben, Browser-Flow starten oder QR-Code scannen.",
+          text: "Server-URL prüfen, Login Flow v2 fortsetzen oder QR-Code scannen.",
         },
         {
           image: SCREENSHOTS.dashboard,
           title: "Dashboard",
-          text: "Boards sehen, suchen, filtern und direkt in aktive Arbeit springen.",
+          text: "Boards suchen, sortieren, filtern, aktualisieren und aus der Übersicht öffnen.",
         },
         {
           image: SCREENSHOTS.kanban,
           title: "Kanban-Board",
-          text: "Stacks und Karten bleiben in einer Board-Ansicht mit Fokus auf Bewegung und Kontext.",
+          text: "Karten erstellen, das Board aktualisieren und Arbeit mit klarem Feedback zwischen Stacks bewegen.",
         },
         {
           image: SCREENSHOTS.card,
           title: "Kartendetails",
-          text: "Beschreibungen, Fälligkeitsdaten, Labels und Zuständigkeiten an einer Stelle bearbeiten.",
+          text: "Karteninhalte bearbeiten und mit Labels, Fälligkeiten, Zuständigen, Anhängen, Kommentaren und Aktivitäten arbeiten.",
         },
         {
           image: SCREENSHOTS.settings,
           title: "Einstellungen",
-          text: "Sprache, Theme-Modus, Datenschutzinfos und Tracking-Präferenzen steuern.",
+          text: "Konten, Profildaten, Theme, Sprache, Lizenzen, Datenschutz, Feedback und Review-Hinweise verwalten.",
         },
       ],
     },
@@ -466,10 +464,10 @@ const content = {
       consent: "Analytics-Einwilligung verwalten",
     },
     downloads: {
-      eyebrow: "Download und Support",
-      title: "App nutzen oder Support erhalten.",
+      eyebrow: "Store-Links und Support",
+      title: "deck NG aus den Stores installieren.",
       text:
-        "Die Store-Links bleiben die primären CTAs. Support und Projektinformationen laufen über diese Website und die Kontaktadresse unten.",
+        "Installiere deck NG über die öffentlichen Store-Einträge. Support und Projektinformationen laufen über diese Website und die Kontaktadresse unten.",
       items: [
         {
           title: "App Store",
@@ -686,6 +684,16 @@ function bindCommonUI() {
     });
   });
 
+  if (dialog) {
+    document.addEventListener("click", (event) => {
+      const trigger = event.target.closest("#footer-consent, #privacy-consent");
+      if (!trigger) return;
+      event.preventDefault();
+      renderConsentDialogState();
+      openConsentDialog(dialog);
+    });
+  }
+
   if (dialogSave && analyticsToggle && dialog) {
     dialogSave.addEventListener("click", () => {
       setConsent(analyticsToggle.checked ? "granted" : "denied");
@@ -762,7 +770,6 @@ function renderMeta(t) {
 
 function renderCommon(t) {
   setText("header-tagline", t.headerTagline);
-  setText("header-download", t.downloadShort);
   setText("footer-text", t.footer);
   setText("footer-privacy", t.footerPrivacy);
   setText("footer-impressum", t.footerImpressum);
@@ -907,6 +914,7 @@ function showConsentBannerIfNeeded() {
 
 function setConsent(value) {
   analyticsConsent = value;
+  document.documentElement.dataset.analyticsConsent = value;
   writeStorage(STORAGE_KEYS.consent, value);
 }
 
@@ -934,35 +942,41 @@ function trackPageView(force = false) {
     return;
   }
 
+  window.__deckNgTrackedPageView = true;
+  document.documentElement.dataset.analyticsTracked = "true";
   captureEvent("$pageview", {
     page_type: page,
     language: currentLang,
     path: window.location.pathname,
   });
-  window.__deckNgTrackedPageView = true;
 }
 
 function captureEvent(eventName, properties = {}) {
-  if (analyticsConsent !== "granted") return;
+  if (analyticsConsent !== "granted") return false;
 
-  const payload = {
-    api_key: POSTHOG.projectToken,
-    event: eventName,
-    properties: {
-      distinct_id: getDistinctId(),
-      $current_url: window.location.href,
-      $pathname: window.location.pathname,
-      site_language: currentLang,
-      ...properties,
-    },
-  };
+  try {
+    const payload = {
+      api_key: POSTHOG.projectToken,
+      event: eventName,
+      properties: {
+        distinct_id: getDistinctId(),
+        $current_url: window.location.href,
+        $pathname: window.location.pathname,
+        site_language: currentLang,
+        ...properties,
+      },
+    };
 
-  fetch(POSTHOG.host, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload),
-    keepalive: true,
-  }).catch(() => {});
+    fetch(POSTHOG.host, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+      keepalive: true,
+    }).catch(() => {});
+    return true;
+  } catch {
+    return false;
+  }
 }
 
 function fillList(id, items, renderItem) {
@@ -983,8 +997,18 @@ function setHTML(id, value) {
 
 function openConsentDialog(dialog) {
   if (typeof dialog.showModal === "function") {
-    dialog.showModal();
+    try {
+      dialog.showModal();
+    } catch {
+      dialog.setAttribute("open", "open");
+      dialog.classList.add("is-open");
+    }
   } else {
+    dialog.setAttribute("open", "open");
+    dialog.classList.add("is-open");
+  }
+
+  if (!dialog.open) {
     dialog.setAttribute("open", "open");
     dialog.classList.add("is-open");
   }
